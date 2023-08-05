@@ -1,0 +1,62 @@
+body {
+  background: white;
+}
+
+.text-color {
+  color: #145a32;
+}
+
+.card {
+  /*  
+ width: 40%;
+  max-width: 600px; 
+  */
+  margin-top: 10%; /* added this*/
+  padding: 20px; /* Increase padding for more height */
+  border-radius: 20px;
+  background: #d4efdf;
+  border: none;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: 70%;
+    padding: 25px;
+  }
+  .container {
+    width: 21400px;
+    justify-content: center;
+    align-items: center;
+    height: 21400px;
+  }
+}
+
+.mobile-text {
+  color: #cd5c5c;
+  font-size: 18px; /* Increase font size for better visibility */
+}
+
+.form-control {
+  margin-right: 12px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #d4efdf;
+  border-color: #c0392b;
+  outline: 0;
+  box-shadow: none;
+}
+
+.cursor {
+  cursor: pointer;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Colorlib Templates" />
+    <meta name="author" content="Colorlib" />
+    <meta name="keywords" content="Colorlib Templates" />
+
+    <!-- Title Page-->
+    <title>Apply for Benefit</title>
+
+    <!-- Font special for pages-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all" />
+  </head>
+
+  <body>
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+      <div class="wrapper wrapper--w900">
+        <div class="card card-6">
+          <div class="card-heading">
+            <h2 class="title">Apply for Benefit</h2>
+          </div>
+          <div class="card-body">
+            <form method="POST">
+              <div class="form-row">
+                <div class="name">Full name</div>
+                <div class="value">
+                  <input
+                    class="input--style-6"
+                    type="text"
+                    name="full_name"
+                    id="userName"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Email address</div>
+                <div class="value">
+                  <div class="input-group">
+                    <input
+                      class="input--style-6"
+                      type="email"
+                      name="email"
+                      id="user_email"
+                      placeholder="example@email.com"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Phone</div>
+                <div class="value">
+                  <div class="input-group">
+                    <input
+                      class="input--style-6"
+                      type="number"
+                      name="Phone"
+                      placeholder="01********"
+                      id="phone_number"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Gender</div>
+                <div class="value">
+                  <div class="input-group">
+                    <label class="radio-container"
+                      >male
+                      <input type="radio" name="Gender" value="male" required />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container"
+                      >female
+                      <input type="radio" name="Gender" value="female" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Birthdate</div>
+                <div class="value">
+                  <div class="input-group">
+                    <input
+                      class="input--style-6"
+                      type="date"
+                      name="birthdate"
+                      placeholder="YYYY-MM-DD"
+                      id="birthDate"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row" id="employment_status">
+                <div class="name">Currently Employed</div>
+                <div class="value">
+                  <div class="input-group">
+                    <label class="radio-container"
+                      >yes
+                      <input type="radio" name="employment" value="true" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container"
+                      >no
+                      <input type="radio" name="employment" value="false" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row hide" id="income">
+                <div class="name">Income</div>
+                <div class="value">
+                  <div class="input-group">
+                    <input
+                      class="input--style-6"
+                      id="income_value"
+                      type="number"
+                      name="Income"
+                      value="0"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row hide" id="income_proof">
+                <div class="name">Upload Income Proof</div>
+                <div class="value">
+                  <div class="input-group js-input-file photo-file">
+                    <input
+                      class="input-file photo"
+                      type="file"
+                      name="income_proof"
+                      id="income_proof_photo"
+                      accept="image/jpeg, image/png, image/gif"
+                    />
+                    <label class="label--file" for="income_proof_photo"
+                      >Choose file</label
+                    >
+                    <span class="input-file__info">No file chosen</span>
+                  </div>
+                  <div class="label--desc">Upload your Income Proof Photo.</div>
+                </div>
+              </div>
+              <div class="form-row" id="disability_status">
+                <div class="name">Do you Have a Disability</div>
+                <div class="value">
+                  <div class="input-group">
+                    <label class="radio-container"
+                      >yes
+                      <input
+                        type="radio"
+                        name="Disability"
+                        value="true"
+                        required
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container"
+                      >no
+                      <input
+                        type="radio"
+                        name="Disability"
+                        value="false"
+                        required
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row hide" id="disability_proof">
+                <div class="name">Upload Disability Proof</div>
+                <div class="value">
+                  <div class="input-group js-input-file photo-file">
+                    <input
+                      class="input-file photo"
+                      type="file"
+                      name="disability_proof"
+                      id="disability_proof_file"
+                      accept="image/jpeg, image/png, image/gif"
+                    />
+                    <label class="label--file" for="disability_proof_file"
+                      >Choose file</label
+                    >
+                    <span class="input-file__info">No file chosen</span>
+                  </div>
+                  <div class="label--desc">
+                    Upload your Disability Proof Photo.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="name">Why do you need this benefit ?</div>
+                <div class="value">
+                  <div class="input-group">
+                    <textarea
+                      class="textarea--style-6"
+                      name="question1"
+                      placeholder=""
+                      id="question1"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">How this benefit will help you ?</div>
+                <div class="value">
+                  <div class="input-group">
+                    <textarea
+                      class="textarea--style-6"
+                      name="question2"
+                      id="question2"
+                      placeholder=""
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="name">Upload National ID</div>
+                <div class="value">
+                  <div class="input-group js-input-file">
+                    <input
+                      class="input-file"
+                      type="file"
+                      name="national_id_input"
+                      id="national_id"
+                      accept="image/jpeg, image/png, image/gif"
+                    />
+                    <label class="label--file" for="national_id"
+                      >Choose file</label
+                    >
+                    <span class="input-file__info">No file chosen</span>
+                  </div>
+                  <div class="label--desc">Upload your National ID Photo.</div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button
+                  class="btn btn--radius-2 btn--blue-2"
+                  id="application_form"
+                  type="submit"
+                >
+                  Send Application
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script type="module" src="js/form.js"></script>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+<!-- end document-->
