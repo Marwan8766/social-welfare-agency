@@ -6,6 +6,9 @@ notes:
 
 1. you must login first to be able to view your cases if you have or to apply to benefits
 2. without being logged in you can only view available benefits
+3. if you tried to signup and didn't receive an email please check your spam
+
+4. PLEASE NOTE THAT THE SERVER HOSTING THE BACKEND IS FREE SO IT TAKES SOME TIME TO LOAD IF IT WASN'T USED FOR SOME TIME, SO PLEASE TRY TO REFRESH THR PAGE AND BE PATIENT
 
 Features
 
