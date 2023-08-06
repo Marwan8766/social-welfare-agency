@@ -1,3 +1,12 @@
+Site link https://social-welfare-agency.netlify.app/
+
+backend API https://social-welfare-agency.onrender.com
+
+notes:
+
+1. you must login first to be able to view your cases if you have or to apply to benefits
+2. without being logged in you can only view available benefits
+
 Features
 
 1. users can login
