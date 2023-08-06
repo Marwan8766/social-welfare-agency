@@ -16,7 +16,7 @@ const fetchBenefits = async () => {
             <div class="text p-4 d-block">
               <div class="meta mb-3"></div>
               <h3 class="heading mt-3">
-                <a id="benefitName" href="/benefit/benefit-single.html?benefitId=${benefit._id}">${benefit.name}</a>
+                <a id="benefitName" href="/benefit-single.html?benefitId=${benefit._id}">${benefit.name}</a>
               </h3>
               <p>
                 ${benefit.summary}
