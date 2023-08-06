@@ -1,6 +1,8 @@
+import host from "../../config.js";
+
 const fetchBenefits = async () => {
   try {
-    const response = await fetch("http://127.0.0.1:8000/api/v1/benefits");
+    const response = await fetch(`${host}/api/v1/benefits`);
     const data = await response.json();
 
     if (data.status === "success") {

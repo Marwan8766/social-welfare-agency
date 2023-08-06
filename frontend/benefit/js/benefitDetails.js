@@ -1,8 +1,8 @@
+import host from "../../config.js";
+
 const fetchBenefitDetails = async (benefitId) => {
   try {
-    const response = await fetch(
-      `http://127.0.0.1:8000/api/v1/benefits/${benefitId}`
-    );
+    const response = await fetch(`${host}/api/v1/benefits/${benefitId}`);
     const data = await response.json();
 
     console.log(`data: ${JSON.stringify(data)}`);

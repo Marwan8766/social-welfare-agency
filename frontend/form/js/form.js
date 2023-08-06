@@ -1,3 +1,5 @@
+import host from "../../config.js";
+
 // Get the URLSearchParams object from the current URL
 const urlSearchParams = new URLSearchParams(window.location.search);
 
@@ -9,7 +11,7 @@ const submitApplicationApiHandler = async (formData) => {
   try {
     const token = JSON.parse(localStorage.getItem("token"));
 
-    const response = await fetch("http://127.0.0.1:8000/api/v1/cases", {
+    const response = await fetch(`${host}/api/v1/cases`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`, // Add the Bearer token to the Authorization header

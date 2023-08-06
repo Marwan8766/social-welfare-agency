@@ -1,3 +1,5 @@
+import host from "../../config.js";
+
 const signupForm = document.querySelector("#register-form");
 
 signupForm.addEventListener("submit", async function (e) {
@@ -17,7 +19,7 @@ signupForm.addEventListener("submit", async function (e) {
 
 const signupApiHandler = async (formData) => {
   try {
-    const response = await fetch("http://127.0.0.1:8000/api/v1/auth/signup", {
+    const response = await fetch(`${host}/api/v1/auth/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

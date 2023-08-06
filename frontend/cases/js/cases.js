@@ -1,5 +1,7 @@
+import host from "../../config.js";
+
 const token = JSON.parse(localStorage.getItem("token"));
-const socket = io("http://localhost:8000", {
+const socket = io(`${host}`, {
   auth: {
     token,
   },

@@ -1,3 +1,5 @@
+import host from "../../config.js";
+
 const verifyButton = document.querySelector("#verify");
 const resendButton = document.querySelector("#resend");
 const userEmailField = document.querySelector("#userEmail");
@@ -8,16 +10,13 @@ userEmailField.innerHTML = userEmail;
 // Function to handle OTP verification
 const verifyOTP = async (otpValue, userEmail) => {
   try {
-    const response = await fetch(
-      "http://127.0.0.1:8000/api/v1/auth/confirmEmail",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ otp: otpValue, email: userEmail }),
-      }
-    );
+    const response = await fetch(`${host}/api/v1/auth/confirmEmail`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ otp: otpValue, email: userEmail }),
+    });
 
     const data = await response.json();
     console.log(`data: ${JSON.stringify(data)}`);
@@ -48,16 +47,13 @@ const verifyOTP = async (otpValue, userEmail) => {
 // Function to handle OTP resend
 const resendOTP = async (userEmail) => {
   try {
-    const response = await fetch(
-      "http://127.0.0.1:8000/api/v1/auth/resendOtp",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email: userEmail }),
-      }
-    );
+    const response = await fetch(`${host}/api/v1/auth/resendOtp`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: userEmail }),
+    });
 
     const data = await response.json();
 
